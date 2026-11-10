@@ -1,59 +1,27 @@
-```markdown
-# 📦 Sistema de Cadastro e Controle de Estoque de Produtos
+# 📦 Sistema de Cadastro e Controle de Estoque (Python)
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen?style=for-the-badge)
+Este projeto é um script interativo desenvolvido em Python para gerenciar de forma simples o estoque de uma loja. Ele foi estruturado em três etapas principais de aprendizado.
 
-Um script simples e interativo em Python para gerenciamento de estoque, permitindo a listagem, cadastro e remoção de produtos e seus respectivos preços de forma dinâmica.
+## 🛠️ Tecnologias
 
-## 🚀 Funcionalidades
+* **Linguagem:** Python 3
+* **Conceitos aplicados:** Manipulação de listas, loops (`for` / `zip`), entrada de dados interativa (`input`) e o conceito de Pilha (LIFO) usando `pop()`.
 
-- **Parte 1 (Listagem de Produtos):** Inicializa o sistema com um estoque padrão e exibe os produtos cadastrados formatados em Real (R$).
-- **Parte 2 (Cadastro Interativo):** Permite ao usuário cadastrar novos produtos informando o nome e o preço através de entradas do console.
-- **Parte 3 (Controle de Saída):** Remove o último produto inserido no estoque (estrutura LIFO/Pilha) e exibe as informações do item removido.
+## 🚀 Funcionalidades do Projeto
 
-## 🛠️ Tecnologias Utilizadas
+### 1. Inicialização e Listagem
+Exibe os produtos padrão cadastrados no sistema juntamente com seus respectivos preços formatados.
 
-- **Python 3**: Linguagem de programação principal.
-- **Estruturas de Dados**: Listas dinâmicas (`append()`, `pop()`) e iteração com `zip()` para manipulação conjunta de chaves e valores.
+### 2. Cadastro Interativo
+Permite que o usuário insira dinamicamente um novo produto e valor via terminal, atualizando o estoque em tempo real.
 
-## 📂 Estrutura do Código
+### 3. Remoção (Último Entrado, Primeiro Saído)
+Simula uma baixa no estoque removendo o último item cadastrado da lista e exibindo os dados do produto removido.
 
-O projeto está estruturado em três etapas lógicas:
+## 💻 Como Executar
 
-1. **Inicialização do Estoque:**
-   ```python
-   produtos = ["Camiseta Básica", "Calça Jeans", "Jaqueta Corta-Vento"]
-   precos = [49.90, 129.90, 219.90]
-   ```
-2. **Inclusão de Novos Itens:**
-   ```python
-   novo_produto = input("Digite o nome do novo produto")
-   novo_preco = float(input("Digite o novo valor do produto"))
-   ```
-3. **Remoção de Itens (Descarte de Estoque):**
-   ```python
-   if len(produtos) > 0:
-       removido = produtos.pop()
-       preco_removido = precos.pop()
-   ```
-
-## 💻 Como Rodar o Projeto
-
-### Pré-requisitos
-Você precisará ter o Python instalado em sua máquina ou utilizar um ambiente online como o **Google Colab**.
-
-### Passo a Passo
-1. Clone este repositório:
+1. Certifique-se de ter o **Python 3** instalado em sua máquina.
+2. Crie um arquivo chamado `main.py` e junte as três partes do código.
+3. Execute o programa pelo terminal:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
-2. Acesse a pasta do projeto e execute o script:
-   ```bash
-   python seu_script.py
-   ```
-3. Siga as instruções no terminal para interagir com o cadastro e visualização do estoque.
-
----
-Desenvolvido como parte do aprendizado prático de estruturas de dados básicas em Python! ⭐
-```
+   python main.py
